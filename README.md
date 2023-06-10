@@ -45,6 +45,7 @@ A0 = Y7 + Y5 + Y3 + Y1 <br>
 
 ## Program:
 
+~~~
 module exp8a(A,B,C,D0,D1,D2,D3,D4,D5,D6,D7);
 input A,B,C;
 output D0,D1,D2,D3,D4,D5,D6,D7;
@@ -57,6 +58,8 @@ assign y=A&(~B)&C;
 assign y=A&B&(~C);
 assign y=A&B&C;
 endmodule
+~~~
+~~~
 module exp8b(Y0,Y1,Y2,Y3,Y4,Y5,Y6,Y7,A0,A1,A2);
 input Y0,Y1,Y2,Y3,Y4,Y5,Y6,Y7;
 output A0,A1,A2;
@@ -64,6 +67,7 @@ assign a2=Y7|Y6|Y5|Y4;
 assign a1=Y7|Y6|Y3|Y2;
 assign a0=Y7|Y5|Y3|Y1;
 endmodule
+~~~
 
 
 ## RTL Schematic:
